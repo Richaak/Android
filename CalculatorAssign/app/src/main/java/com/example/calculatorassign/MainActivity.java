@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         TV=(TextView)findViewById(R.id.tv);
         // setNumericOnClickListener();
 
+
         //set all the button numbers to be displayed in the textview
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -135,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
+//after onclick on + button
         buttonadd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -169,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
 
 
-
+//after clicking on - button
         buttonsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -187,6 +189,8 @@ public class MainActivity extends AppCompatActivity {
             }});
 
 
+
+        //after clicking on / button
         buttondiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -203,6 +207,8 @@ public class MainActivity extends AppCompatActivity {
 
             }});
 
+
+        //after clicking on * button
         buttonmult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -230,6 +236,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
 
+
+      //to clear all the data
         buttonclear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -237,6 +245,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //to calculate the answer
         buttonans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
