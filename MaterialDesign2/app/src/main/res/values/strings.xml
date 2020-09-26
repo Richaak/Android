@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MaterialDesign2</string>
+    <string-array name="array">
+        <item>Choose Your District</item>
+        <item>*NorthGoa*</item>
+        <item>*SouthGoa*</item>
+    </string-array>
+</resources>
