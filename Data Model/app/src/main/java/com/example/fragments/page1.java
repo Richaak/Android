@@ -76,9 +76,9 @@ public class page1 extends Fragment
         em.setText(email);
         passw.setText(pass);
         cpass.setText(confirmpass);
-         tb = (Toolbar)view.findViewById(R.id.tool);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(tb);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    //   tb = (Toolbar)view.findViewById(R.id.tool);
+        //((AppCompatActivity)getActivity()).setSupportActionBar(tb);
+    //    ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         super.onViewCreated(view, savedInstanceState);
     }

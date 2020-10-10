@@ -9,30 +9,10 @@
     tools:context=".page1">
 
 
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#ff2701"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/tool"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-
-        </com.google.android.material.appbar.MaterialToolbar>
-
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="358dp"
-        android:layout_height="192dp"
+        android:layout_width="345dp"
+        android:layout_height="265dp"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="23dp"
@@ -48,11 +28,12 @@
         tools:ignore="MissingConstraints,NotSibling,UnknownId">
 
         <ImageView
-            android:layout_width="352dp"
-            android:layout_height="159dp"
+            android:layout_width="335dp"
+            android:layout_height="194dp"
+            android:layout_marginBottom="16dp"
             android:src="@drawable/a"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="29dp"></ImageView>
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="14dp"></ImageView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -239,7 +220,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458"
+        app:layout_constraintVertical_bias="0.377"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -253,12 +234,11 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454"
+        app:layout_constraintVertical_bias="0.361"
         tools:ignore="MissingConstraints">
 
 
     </ImageView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

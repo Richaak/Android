@@ -64,11 +64,11 @@ public class page2 extends Fragment implements View.OnClickListener
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
     {
-        tb = (Toolbar)view.findViewById(R.id.tool);
+     //   tb = (Toolbar)view.findViewById(R.id.tool);
         TextInputEditText stat=(TextInputEditText)view.findViewById(R.id.tb1);
         stat.setText(state);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(tb);
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    //   ((AppCompatActivity)getActivity()).setSupportActionBar(tb);
+     //   ((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setSpinner(view);
         calender = (TextInputEditText)view.findViewById(R.id.calender);
         calender.setOnClickListener(this);
