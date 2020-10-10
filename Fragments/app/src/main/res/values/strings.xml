@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Title: Fragments</string>
+    <string name="app_name"></string>
     <string-array name="array">
         <item>Choose Your District</item>
         <item>*NorthGoa*</item>

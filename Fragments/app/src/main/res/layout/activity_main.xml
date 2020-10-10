@@ -10,6 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/vp">
+
+        <androidx.viewpager.widget.PagerTitleStrip
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:paddingTop="18dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
     </androidx.viewpager.widget.ViewPager>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -49,6 +49,16 @@ ViewPager VP;
         }
 
 
+        public CharSequence getPageTitle(int position) {
+            if (position == 0) {
+                return "Page 1";
+            } else if (position == 1) {
+                return "Page 2";
+            }
+            return null;
+        }
+
+
 
         @Override
         public int getCount()
