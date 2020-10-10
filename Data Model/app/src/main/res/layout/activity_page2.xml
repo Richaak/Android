@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page2">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff2701"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="416dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="354dp"
+        android:layout_marginLeft="354dp"
+        android:background="#afd0d3"
+        android:gravity="center_horizontal"
+        android:text="Richa"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="319dp"
+        android:layout_height="554dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="312dp"
+            android:layout_height="635dp"
+            android:orientation="vertical"
+            tools:ignore="ExtraText,MissingConstraints"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="194dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="287dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="30dp"
+
+                    android:textStyle="bold"
+                    android:text="Select Your Gender"
+                    android:textColor="     #419099"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Male">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Female"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Female">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Other">
+
+
+                </RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="287dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:text="Your State"
+                android:textStyle="bold"
+                android:textColor="     #419099"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your state name here"
+                app:boxBackgroundColor="#ffffaa"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="26dp"
+                app:boxCornerRadiusTopStart="26dp"
+                app:startIconDrawable="@drawable/home">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/tb1"
+                    android:layout_height="wrap_content">
+
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="287dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:text="Your District"
+                android:textAlignment="center"
+                android:textColor="     #419099"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                app:boxBackgroundColor="#ffffaa" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="287dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:text="Your Birthday"
+                android:textAlignment="center"
+                android:textColor="     #419099"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:hint="Select Your Birthday"
+
+                app:boxBackgroundColor="#ffffaa"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="26dp"
+                app:boxCornerRadiusTopStart="26dp"
+
+               >
+
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/calender"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+android:drawableLeft="@drawable/cake"
+                    android:drawableRight="@drawable/calender">
+
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
