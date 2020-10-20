@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6D3C3"
+    tools:context=".mainpage">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="468dp"
+        app:srcCompat="@drawable/download" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF3361"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/textbox"
+        android:padding="20dp">
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:background="#8AC9D1"
+           android:id="@+id/b1"
+           android:text="Tom">
+
+       </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:background="#DEA654"
+            android:id="@+id/b2"
+            android:text="Jerry">
+
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
