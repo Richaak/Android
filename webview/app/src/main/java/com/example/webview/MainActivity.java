@@ -36,10 +36,22 @@ public class MainActivity extends AppCompatActivity {
         web = (WebView) findViewById(R.id.webvieww);
           web.setWebViewClient((new WebViewClient()));
         web.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
-        web.getSettings().setJavaScriptEnabled(true);
-        web.getSettings().setGeolocationEnabled(true);
-         web.loadUrl("https://www.youtube.com/watch?v=3olM-9vcd4M");
 
+        ConnectivityManager cm =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        if (activeNetwork != null)
+        {
+            web.setWebViewClient((new WebViewClient()));
+            web.getSettings().setJavaScriptEnabled(true);
+            web.getSettings().setGeolocationEnabled(true);
+            web.loadUrl("https://www.youtube.com/watch?v=3olM-9vcd4M");
+        } else
+        {
+            web.getSettings().setJavaScriptEnabled(true);
+            web.getSettings().setGeolocationEnabled(true);
+            web.loadUrl("file:///android_asset/myprofile.html");
+        }
 
 
 
